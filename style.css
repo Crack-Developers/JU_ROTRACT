@@ -18,7 +18,7 @@ html{
     font-size: 10px;
     -webkit-tap-highlight-color: transparent;
 }
-.container{
+.container-not{
     width: 1150px;
     margin: 0px auto;
     display: table;
@@ -119,13 +119,13 @@ html{
     width: 100%;
     border-top: #cccfff;
 }
-.notification{
+.notification-scroll{
     width: 100%;
     float: left;
     padding: 12px;
     background: #ebebeb;
 }
-.notification b{
+.notification-scroll b{
     color: red;
     font-size: 18px;
     float: left;
@@ -135,11 +135,11 @@ html{
 }
 .notification marquee{
     list-style: none;
-    font-size: 16px;
+    font-size:xx-large
 }
 .main-section{
+    display: flex;
     width: 100%;
-    float: left;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -169,4 +169,200 @@ html{
     font-size: 14px;
     line-height: 25px;
     color: #1e1e1e;
+}
+.container-about {
+    
+    display:flex;
+    justify-content:center;
+    position:relative;
+    max-width:max-content; /* Maximum width */
+    margin: 0 auto; /* Center it */
+
+  }
+  
+  .aboutjpeg{
+    width: 50%;
+  }
+  .container-about .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+.notification{            
+    margin-top: 5rem;
+    width: 50%;
+}
+.agenta{
+    box-shadow: 10px 10px 8px 10px #888888;
+    float: left;
+    margin: 5rem;
+    margin-bottom: -15rem;
+
+  }
+  .agenta:nth-child(2){
+  position: relative;
+  top: -22.5rem;
+  left: 77rem;
+
+  }
+  /* Clear floats after the columns */
+  .notification:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+
+#cord{
+    position: relative;
+    top: -2rem;
+    box-shadow: 10px 10px 8px 10px #888888;
+    justify-content: center;
+    margin-left: 16rem;
+    margin-top: 5rem;
+    background-color:  #a9aece;
+    color: #000000;
+    font-size:large;
+    
+
+}
+.staff{
+    display: flex;
+    width:100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    gap: 0 5rem;
+    
+
+}
+.card{
+    box-shadow: 10px 10px 8px 10px #888888;
+    flex: 100%;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: large;
+}
+form{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for labels */
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for form controls */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for the submit button */
+.form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for hover effect on the submit button */
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-section{
+        position:relative;
+        top:5rem;
+
+    }
+    .width-50 {
+        width: 100%;
+        text-align: center;
+    }
+    .width-100 {
+        width: 100%;
+        text-align: center;
+    }
+    .header-left, .header-right {
+        text-align: center;
+    }
+    .header-right {
+        margin-top: 10px;
+    }
+    .header-menu {
+        text-align: center;
+    }
+    .header-menu ul {
+        padding: 0;
+    }
+    .header-menu .width-20 {
+        display: none;
+    }
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .agenta:nth-child(2){
+        top: -42.5rem;
+        left: 19rem;
+    }
+    .agenta{
+        margin-bottom: -40rem;
+    }
+    #cord{
+        position: relative;
+        left: -11rem;
+        
+    }
+
+    .staff {
+        display: flex;
+        justify-content: space-around;
+   }
+
+   .card {
+       flex: 0 0 100%;
+       max-width: 50%;
+   }
 }
