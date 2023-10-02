@@ -137,61 +137,6 @@ html{
     list-style: none;
     font-size:xx-large
 }
-.main-section{
-    display: flex;
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.about-detail{
-    position: absolute;
-    width: 70rem;
-    left: 60rem;
-    top: 100rem;
-
-}
-.about-img img{
-    box-shadow: 10px 10px 8px 10px #888888;
-}
-.about-detail h6{
-    font-size: 5rem;
-    color: #ff4545;
-}
-.about-detail h1{
-    font-size: 32px;
-    margin: 5px 0px 10px 0px;
-    color: #1f2836;
-}
-.about-detail h1 span{
-    color: #fd621a;
-}
-.about-detail p{
-    font-size: 14px;
-    line-height: 25px;
-    color: #1e1e1e;
-}
-.container-about {
-    
-    display:flex;
-    justify-content:center;
-    position:relative;
-    max-width:max-content; /* Maximum width */
-    margin: 0 auto; /* Center it */
-
-  }
-  
-  .aboutjpeg{
-    width: 50%;
-  }
-  .container-about .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-  }
 .notification{            
     margin-top: 5rem;
     width: 50%;
@@ -219,12 +164,12 @@ html{
 
 #cord{
     position: relative;
-    top: -2rem;
+    top: 0.5rem;
     box-shadow: 10px 10px 8px 10px #888888;
     justify-content: center;
     margin-left: 16rem;
     margin-top: 5rem;
-    background-color:  #a9aece;
+    background-color:  #ffffff;
     color: #000000;
     font-size:large;
     
@@ -232,7 +177,7 @@ html{
 }
 .staff{
     display: flex;
-    width:100%;
+    width:300rem;
     margin-top: 5rem;
     justify-content: space-around;
     gap: 0 5rem;
@@ -359,10 +304,11 @@ footer {
     .staff {
         display: flex;
         justify-content: space-around;
+        width: 100%;
    }
 
    .card {
        flex: 0 0 100%;
        max-width: 50%;
    }
-}
+}s
